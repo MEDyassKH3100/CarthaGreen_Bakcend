@@ -9,7 +9,12 @@ import { MailModule } from './mail/mail.module';
 import { UsersModule } from './modules/users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { UploadsModule } from './uploads/uploads.module';
+import { SensorsModule } from './modules/sensors/sensors.module';
 import configuration from './config/configuration';
+import { DevicesModule } from './modules/devices/devices.module';
+import { AlertsModule } from './modules/alerts/alerts.module';
+import { PlantsModule } from './modules/plants/plants.module';
+import { StatisticsModule } from './modules/statistics/statistics.module';
 
 @Module({
   imports: [
@@ -31,6 +36,11 @@ import configuration from './config/configuration';
     UsersModule,
     AuthModule,
     UploadsModule,
+    SensorsModule,
+    DevicesModule,
+    AlertsModule,
+    PlantsModule,
+    StatisticsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
